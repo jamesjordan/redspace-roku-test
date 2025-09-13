@@ -1,0 +1,15 @@
+{
+    "rules": {
+        "condition-style": "group",
+        "assign-all-paths": "warn",
+        "unsafe-path-loop": "warn",
+        "unsafe-iterators": "warn",
+        "case-sensitivity": "warn",
+        "unused-variable": "warn",
+        "unreachable-code": "warn"
+    },
+    "ignores":[
+        "components/qrCode/**/*",
+        "source/utils/JWTUtils.brs"
+    ]
+}

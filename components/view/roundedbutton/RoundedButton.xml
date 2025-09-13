@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<component name="RoundedButton" extends="Group" >
+
+    <interface>
+        <field id="buttonType" type="string"/>
+        <field id="width" type="integer"/>
+        <field id="text" type="string"/>
+        <field id="action" type="string"/>
+        <field id="selected" type="boolean" alwaysNotify="true"/>
+        <field id="enabled" type="boolean" alwaysNotify="true" value="true"/>
+
+    </interface>
+
+    <script type="text/brightscript" uri="pkg:/components/StyleUtil.brs" />
+    <script type="text/brightscript" uri="pkg:/components/view/roundedbutton/RoundedButton.brs" />
+
+    <children>
+        <Poster id="focused_image" uri="pkg:/images/roundedbuttons/primary_focus.9.png" width="226" height="68"/>
+        <Poster id="unfocused_image"/>
+        <Label id="lbl" translation="[10, 0]" horizAlign="center" vertAlign="center"/>
+    </children>
+
+</component>

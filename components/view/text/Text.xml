@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<component name="Text" extends="Group">
+
+  <interface>
+    <field id="color" type="color" value="0xffffffff" alias="label.color" />
+    <field id="height" type="float" value="0" alias="label.height" />
+    <field id="horizAlign" type="string" value="left" alias="label.horizAlign" />
+    <field id="lineSpacing" type="float" alias="label.lineSpacing" />
+    <field id="text" type="string" value="" alias="label.text" onChange="setTextWidth" />
+    <field id="size" type="int" value="30" onChange="onSizeChange" />
+    <field id="style" type="string" value="bold" onChange="onStyleChange" />
+    <field id="vertAlign" type="string" value="top" alias="label.vertAlign" />
+    <field id="width" type="float" value="0" alias="label.width" />
+    <field id="wrap" type="bool" value="false" alias="label.wrap" />
+    <field id="maxLines" type="int" alias="label.maxLines" />
+    <field id="translation" type="vector2d" value="[0, 0]" alias="label.translation" />
+    <field id="textWidth" type="int" value="0" alwaysNotify="true" />
+    <field id="isTextEllipsized" type="bool" alias="label.isTextEllipsized" alwaysNotify="true" />
+    <field id="ellipsisText" type="string" value="..." alias="label.ellipsisText" alwaysNotify="true" />
+  </interface>
+
+  <script type="text/brightscript" uri="Text.brs" />
+  <script type="text/brightscript" uri="pkg:/components/StyleUtil.brs" />
+
+  <children>
+    <Label
+      id="label"
+    />
+  </children>
+
+</component>

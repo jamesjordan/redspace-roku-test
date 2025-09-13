@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<component name="DescriptionText" extends="Group" >
+
+    <interface>
+        <field id="text" type="string"/>
+        <field id="draw" type="boolean" alwaysNotify="true"/>
+        <field id="width" type="integer" alias="textLbl.width"/>
+        <field id="numLines" type="integer" alias="textLbl.numLines"/>
+        <field id="enabled" type="boolean" value="false"/>
+        <field id="selected" type="boolean" alwaysNotify="true"/>
+
+    </interface>
+
+    <script type="text/brightscript" uri="pkg:/components/StyleUtil.brs" />
+    <script type="text/brightscript" uri="DescriptionText.brs" />
+
+    <children>
+        <Label
+            id="textLbl"
+            translation="[0, 0]"
+            width="800"
+            wrap="true"
+            numLines="2"
+            lineSpacing="0"
+            ellipsizeOnBoundary="true"
+        />
+    </children>
+
+</component>

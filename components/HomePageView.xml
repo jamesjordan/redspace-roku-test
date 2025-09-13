@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<component name="HomePageView" extends="Group">
+
+    <interface>
+        <field id="rowData" type="array" alwaysNotify="true" />
+        <field id="selectedData" type="assocarray" alwaysNotify="true" />
+    </interface> 
+
+    <script type="text/brightscript" uri="pkg:/components/StyleUtil.brs" />
+    <script type="text/brightscript" uri="pkg:/components/HomePageView.brs" />
+
+    <children>
+
+        <Label id="titleLbl" 
+            translation="[141, 100]" 
+            wrap="false" 
+            width="1600" 
+            ellipsizeOnBoundary="true" 
+            numLines="1"
+            scaleRotateCenter="[100, 10]"
+        />
+
+        <MarkupGridComponent 
+            id = "markupGridList" 
+            itemComponentName="GridItemComponent"
+            numRows = "2" 
+            drawFocusFeedback = "true"
+            vertFocusAnimationStyle="floatingFocus"
+            itemClippingRect="[0, -200, 1800, 1100]"
+        />
+
+        <Label 
+            id="noContent"
+            width="1920"
+            height="200"
+            translation="[0, 509]"
+            visible="false"
+            horizAlign="center"
+            text="Testing testing 123"
+        />
+
+        <Animation id="transAnimationOff"
+            duration=".1"
+            repeat="false"
+            easeFunction="linear" >
+            <Vector2DFieldInterpolator id="myInterp2"
+                key="[0.0, 1.0]"
+                keyValue="[ [141, 100], [-10, 100] ]"
+                fieldToInterp="titleLbl.translation"
+            />
+        </Animation>
+
+        <Animation id="rotateAnimationOff"
+            duration=".1"
+            delay="0"
+            repeat="false"
+            easeFunction="linear" >
+            <FloatFieldInterpolator
+                key="[0.0, 1.0]"
+                keyValue="[ 0, 1.57 ]"
+                fieldToInterp="titleLbl.rotation"
+            />
+        </Animation>
+
+        <Animation id="transAnimationOn"
+            duration=".1"
+            delay=".1"
+            repeat="false"
+            easeFunction="linear" >
+            <Vector2DFieldInterpolator id="myInterp2"
+                key="[0.0, 1.0]"
+                keyValue="[ [-10, 100], [141, 100] ]"
+                fieldToInterp="titleLbl.translation"
+            />
+        </Animation>
+
+        <Animation id="rotateAnimationOn"
+            duration=".1"
+            delay=".1"
+            repeat="false"
+            easeFunction="linear" >
+            <FloatFieldInterpolator
+                key="[0.0, 1.0]"
+                keyValue="[ 1.57, 0 ]"
+                fieldToInterp="titleLbl.rotation"
+            />
+        </Animation>
+
+        <Animation id="titleAnim" duration="0.18" easeFunction="outQuad" repeat="false">
+            <Vector2DFieldInterpolator id="titleTransInterp"
+                fieldToInterp="titleLbl.translation"
+                key="[0.0, 1.0]"
+                keyValue="[[141,100],[141,100]]" />
+            <FloatFieldInterpolator id="titleRotInterp"
+                fieldToInterp="titleLbl.rotation"
+                key="[0.0, 1.0]"
+                keyValue="[0,0]" />
+        </Animation>
+
+    </children>
+</component>

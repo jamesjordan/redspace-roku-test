@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<component name = "MainScene" extends = "Scene">
+
+  <interface>
+    <field id="exitApp" type="boolean" value="false" />
+  </interface>
+
+  <script type="text/brightscript" uri="pkg:/components/MainScene.brs" />
+
+  <!--Controllers-->
+  <script type="text/brightscript" uri="pkg:/source/controllers/AbstractController.brs" />
+  <script type="text/brightscript" uri="pkg:/source/controllers/AppController.brs" />
+  <script type="text/brightscript" uri="pkg:/source/controllers/InitController.brs" />
+  <script type="text/brightscript" uri="pkg:/source/controllers/HomePageController.brs" />
+  <script type="text/brightscript" uri="pkg:/source/controllers/EmptyPageController.brs" />
+  <script type="text/brightscript" uri="pkg:/source/controllers/DetailsPageController.brs" />
+  <script type="text/brightscript" uri="pkg:/source/controllers/VideoPageController.brs" />
+
+  <!--Mediators-->
+  <script type="text/brightscript" uri="pkg:/source/mediators/HomePageMediator.brs" />
+  <script type="text/brightscript" uri="pkg:/source/mediators/MainViewMediator.brs" />
+  <script type="text/brightscript" uri="pkg:/source/mediators/DetailsPageMediator.brs" />
+  <script type="text/brightscript" uri="pkg:/source/mediators/EmptyPageMediator.brs" />
+  <script type="text/brightscript" uri="pkg:/source/mediators/VideoPageMediator.brs" />
+
+  <script type="text/brightscript" uri="pkg:/source/events/EventDispatcher.brs" />
+
+  <!--Models-->
+  <script type="text/brightscript" uri="pkg:/source/models/LocalConfigModel.brs" />
+  <script type="text/brightscript" uri="pkg:/source/models/NavigationModel.brs" />
+  <script type="text/brightscript" uri="pkg:/source/models/ContentModel.brs" />
+
+  <!--Services-->
+  <script type="text/brightscript" uri="pkg:/source/services/LocalConfigService.brs" />
+  <script type="text/brightscript" uri="pkg:/source/services/BaseService.brs" />
+  <script type="text/brightscript" uri="pkg:/source/services/ShowsService.brs" />
+  <script type="text/brightscript" uri="pkg:/source/services/ShowService.brs" />
+  <script type="text/brightscript" uri="pkg:/source/services/EpisodesService.brs" />
+
+  <!-- Utils -->
+  <script type="text/brightscript" uri="pkg:/source/states/TemplateNames.brs" />
+
+  <children>
+    <MainView id="MainViewContainer" />
+    <!-- TODO:Add FHD RedSpace screen to splash while loading. -->
+    <Group id="SplashContainer" /> 
+    <LoadSpinner id="Loader" translation="[875, 454]"/>
+  </children>
+</component>

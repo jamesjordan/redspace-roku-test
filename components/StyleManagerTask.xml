@@ -1,0 +1,11 @@
+<?rokuml version="1.0" encoding="utf-8" ?>
+
+<component name="StyleManagerTask" extends="Task" >
+
+  <interface>
+    <field id="stylesComplete" type="boolean" alwaysnotify="true"/>
+  </interface>
+
+  <script type="text/brightscript" uri="pkg:/components/StyleManagerTask.brs" />
+
+</component>

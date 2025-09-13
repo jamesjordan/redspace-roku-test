@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<component name="EmptyPageView" extends="Group">
+
+  <interface>
+    <field id="pageName" type="string" alias="title.text"/>
+  </interface>
+
+  <script type="text/brightscript" uri="EmptyPageView.brs" />
+  
+  <children>
+    <Label 
+        id="title"
+        translation = "[180, 120]"
+    />
+  </children>
+</component>

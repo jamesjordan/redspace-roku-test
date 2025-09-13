@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component name="FocusGroup" extends="Group">
+    <interface>
+        <field id="direction" type="string" value="horizontal"/>
+    </interface>
+
+    <script type="text/brightscript" uri="FocusGroup.brs"/>
+</component>

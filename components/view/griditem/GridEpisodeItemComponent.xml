@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component name="GridEpisodeItemComponent" extends="Group">
+    <interface>
+        <field id="itemContent" type="node" alwaysNotify="true" />
+        <field id="focusPercent" type="float" />
+        <field id="rowFocusPercent" type="float" />
+        <field id="itemHasFocus" type="Boolean" />
+        <field id="rowHasFocus" type="Boolean" />
+        <field id="rowListHasFocus" type="Boolean" />
+        <field id="gridHasFocus" type="Boolean" />
+        <field id="width" type="float" alias="poster.width" />
+        <field id="height" type="float" alias="poster.height" />
+        <field id="index" type="integer" />
+    </interface>
+    <script type="text/brightscript" uri="GridEpisodeItemComponent.brs" />
+    <script type="text/brightscript" uri="pkg:/components/StyleUtil.brs" />
+    
+    <children>
+        <Poster
+            id="poster"
+            loadDisplayMode="scaleToFill"
+        />
+
+        <Text
+            id="titleLabel"
+            style="bold"
+            size="22"
+            width="50"
+        />
+    </children>
+</component>

@@ -1,0 +1,21 @@
+{
+  "name": "redspace-test-james-jordan",
+  "version": "1.0.0",
+  "description": "RedSpace Test Jmes Jordan",
+  "scripts": {
+    "lint": "bslint",
+    "lintFix": "bslint --fix",
+    "lintCheck": "bslint --checkUsage"
+  },
+  "author": "James Jordan",
+  "dependencies": {
+    "@rokucommunity/bslint": "^0.8.20",
+    "brighterscript": "^0.65.27",
+    "brighterscript-formatter": "^1.7.1",
+    "dotenv": "^16.4.5",
+    "glob": "^10.3.12",
+    "properties-file": "^3.5.4",
+    "roku-deploy": "^3.12.0",
+    "yarg": "^1.0.8"
+  }
+}

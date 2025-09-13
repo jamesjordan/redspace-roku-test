@@ -1,0 +1,214 @@
+{
+    "COLORS":
+    {
+        "PRIMARY":"#00678EFF",
+        "PRIMARY_DARK":"#004A6DFF",
+        "OFF_WHITE":"#DEEAF7",
+        "WHITE":"#FFFFFFFF",
+        "WHITE_50": "#707789FF",
+        "RED": "#CF1313FF",
+        "ON_BACKGROUND": "#F2F8FFFF",
+        "BACKGROUND": "#01202AFF",
+        "SURFACE": "#23424EFF",
+        "SURFACE_VARIANT_1": "#1E4656FF",
+        "SURFACE_VARIANT_3": "#577886FF",
+        "SURFACE_VARIANT_4": "#AAB3BEFF",
+        "SURFACE_VARIANT_5": "#118CBBFF",
+        "DARK": "#0F151AFF"
+    },
+    "FONTS":
+    {
+        "MAIN":
+        {
+            "REGULAR":"pkg:/fonts/Gantari-Regular.ttf",
+            "MEDIUM":"pkg:/fonts/Gantari-Medium.ttf",
+            "SEMIBOLD":"pkg:/fonts/Gantari-SemiBold.ttf",
+            "BOLD":"pkg:/fonts/Gantari-Bold.ttf"
+        }
+    },
+    "TYPOGRAPHY":
+    {
+        "H1":
+        {
+            "FONT_NAME":"MAIN",
+            "FONT_WEIGHT":"BOLD",
+            "FONT_SIZE":48
+        },
+        "H2":
+        {
+            "FONT_NAME":"MAIN",
+            "FONT_WEIGHT":"SEMIBOLD",
+            "FONT_SIZE":40
+        },
+        "H3":
+        {
+            "FONT_NAME":"MAIN",
+            "FONT_WEIGHT":"SEMIBOLD",
+            "FONT_SIZE":36
+        },
+        "H4":
+        {
+            "FONT_NAME":"MAIN",
+            "FONT_WEIGHT":"SEMIBOLD",
+            "FONT_SIZE":26
+        },
+        "L1":
+        {
+            "FONT_NAME":"MAIN",
+            "FONT_WEIGHT":"REGULAR",
+            "FONT_SIZE":40
+        },
+        "L2":
+        {
+            "FONT_NAME":"MAIN",
+            "FONT_WEIGHT":"REGULAR",
+            "FONT_SIZE":38
+        },
+        "L3":
+        {
+            "FONT_NAME":"MAIN",
+            "FONT_WEIGHT":"REGULAR",
+            "FONT_SIZE":36
+        },
+        "L4":
+        {
+            "FONT_NAME":"MAIN",
+            "FONT_WEIGHT":"REGULAR",
+            "FONT_SIZE":32
+        },
+        "L5":
+        {
+            "FONT_NAME":"MAIN",
+            "FONT_WEIGHT":"BOLD",
+            "FONT_SIZE":28
+        },
+        "L6":
+        {
+            "FONT_NAME":"MAIN",
+            "FONT_WEIGHT":"BOLD",
+            "FONT_SIZE":28
+        },
+        "L7":
+        {
+            "FONT_NAME":"MAIN",
+            "FONT_WEIGHT":"MEDIUM",
+            "FONT_SIZE":28
+        },
+        "L8":
+        {
+            "FONT_NAME":"MAIN",
+            "FONT_WEIGHT":"SEMIBOLD",
+            "FONT_SIZE":26
+        },
+        "L9":
+        {
+            "FONT_NAME":"MAIN",
+            "FONT_WEIGHT":"REGULAR",
+            "FONT_SIZE":24
+        },
+        "B":
+        {
+            "FONT_NAME":"MAIN",
+            "FONT_WEIGHT":"REGULAR",
+            "FONT_SIZE":28
+        }
+    },
+    "STYLES":
+    {
+        "modal-dialog":
+        {
+            "title_font":"H1",
+            "title_font_color":"OFF_WHITE",
+            "sub_title_font":"B",
+            "sub_title_font_color":"OFF_WHITE"
+        },
+        "dialog--pallet--primary":
+        {
+            "DialogBackgroundColor": "BACKGROUND",
+            "DialogFocusColor": "PRIMARY",
+            "DialogFocusItemColor": "PRIMARY",
+            "DialogTextColor": "ON_BACKGROUND"
+        },
+        "dialog--pallet--primarylight":
+        {
+            "DialogBackgroundColor": "BACKGROUND",
+            "DialogFocusColor": "PRIMARY",
+            "DialogFocusItemColor": "PRIMARY",
+            "DialogTextColor": "ON_BACKGROUND"
+        },
+        "text-button":
+        {
+            "focus_label_font":"L5",
+            "unfocus_label_font":"L7",
+            "color":"ON_BACKGROUND"
+        },
+        "rounded-button":
+        {
+            "label_font":"H4",
+            "color":"OFF_WHITE"
+        },
+        "keyboard-input-button":
+        {
+            "label_font":"L3",
+            "color":"WHITE_50"
+        },
+        "side-menu--item":
+        {
+            "highlightcolor": "PRIMARY"
+        },
+        "side-menu--item--label":
+        {
+            "label_font":"H4",
+            "COLOR":"WHITE"
+        },
+        "settings--pages":
+        {
+            "title_font":"H1",
+            "body_font":"B",
+            "text_color":"OFF_WHITE",
+            "link_color":"SECONDARY"
+        },
+        "settings--menu--item":
+        {
+            "TYPOGRAPHY":"B",
+            "focused_font":"B",
+            "unfocused_font":"L9",
+            "unfocused_color":"SECONDARY",
+            "focused_color":"OFF_WHITE",
+            "underline_color":"PRIMARY"
+        },
+        "content-page":
+        {
+            "nocontent_font": "H1",
+            "nocontent_color": "ON_BACKGROUND",
+            "title_font": "H1",
+            "title_color": "ON_BACKGROUND"
+        },
+        "content-page--tab":
+        {
+            "underlineColor": "SURFACE_VARIANT_5",
+            "label_font": "L7",
+            "label_color": "ON_BACKGROUND",
+            "label_selected_color": "SURFACE_VARIANT_5",
+            "underline_color":"SURFACE_VARIANT_3"
+        },
+        "grid--item":
+        {
+            "progressBarColor": "PRIMARY",
+            "titleLabelColor": "ON_BACKGROUND",
+            "descriptionLabel_font": "L9",
+            "descriptionLabel_color": "SURFACE_VARIANT_4",
+            "metaLabel_font": "L9",
+            "metaLabel_color": "SURFACE_VARIANT_4"
+        },
+        "grid--hero-item":
+        {
+            "titlelabel_font": "H1",
+            "titleLabel_color": "ON_BACKGROUND",
+            "descriptionLabel_font": "B",
+            "descriptionLabel_color": "ON_BACKGROUND",
+            "metaLabel_font": "L9",
+            "metaLabel_color": "ON_BACKGROUND"
+        }
+    }
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component name="GridSeasonItemComponent" extends="Group">
+    <interface>
+        <field id="itemContent" type="node" alwaysNotify="true" />
+        <field id="focusPercent" type="float" />
+        <field id="rowFocusPercent" type="float" />
+        <field id="itemHasFocus" type="Boolean" />
+        <field id="rowHasFocus" type="Boolean" />
+        <field id="rowListHasFocus" type="Boolean" />
+        <field id="gridHasFocus" type="Boolean" />
+        <field id="index" type="integer" />
+    </interface>
+    <script type="text/brightscript" uri="GridSeasonItemComponent.brs" />
+    <script type="text/brightscript" uri="pkg:/components/StyleUtil.brs" />
+    
+    <children>
+        <Text
+            id="titleLabel"
+            style="bold"
+            size="22"
+            width="50"
+        />
+    </children>
+</component>

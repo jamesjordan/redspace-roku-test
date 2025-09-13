@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<component name="DetailsPage" extends="Group">
+
+    <interface>
+        <field id="pageData" type="assocarray" alwaysNotify="true" />
+        <field id="episodeData" type="assocarray" alwaysNotify="true" />
+        <field id="watchNow" type="assocarray" alwaysNotify="true" />
+    </interface>
+
+    <script type="text/brightscript" uri="pkg:/components/StyleUtil.brs" />
+    <script type="text/brightscript" uri="pkg:/components/DetailsPage.brs" />
+    <script type="text/brightscript" uri="pkg:/source/utils/datetime.brs" />
+    <script type="text/brightscript" uri="pkg:/source/utils/util.brs" />
+
+    <children>
+        
+        <Label id="titleLbl" translation="[160, 100]" wrap="false" width="1600" ellipsizeOnBoundary="true" numLines="1"/>
+
+        <GridMetaData id="gridMetaData" visible="false" topPadding="200"/>
+
+        <Group id="episodeGroup" translation="[1110, 0]" visible="false">
+
+            <Rectangle id="episodesBackground" color="#001015EE" visible="true" width="810" height="1080"/>
+
+            <MarkupGridComponent 
+                id = "markupGridSeasons" 
+                itemComponentName="GridSeasonItemComponent"
+                numRows = "10" 
+                drawFocusFeedback = "true"
+                vertFocusAnimationStyle="floatingFocus"
+                itemClippingRect="[0, -150, 300, 1230]"
+                translation="[100, 150]"
+            />
+
+            <MarkupGridComponent 
+                id = "markupGridList" 
+                itemComponentName="GridEpisodeItemComponent"
+                numRows = "4" 
+                drawFocusFeedback = "true"
+                vertFocusAnimationStyle="floatingFocus"
+                itemClippingRect="[0, -150, 300, 1230]"
+                translation="[400, 150]"
+            />
+        </Group>
+        
+    </children>
+</component>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<component name="GridMetaData" extends="Group">
+
+    <interface>
+        <field id="topPadding" type="integer" value="90" />
+        <field id="itemData" type="assocarray" />
+        <field id="longDescription" type="boolean" value="false" />
+    </interface>
+
+    <script type="text/brightscript" uri="GridMetaData.brs" />
+    <script type="text/brightscript" uri="pkg:/components/StyleUtil.brs" />
+    <script type="text/brightscript" uri="pkg:/source/utils/datetime.brs" />
+
+    <children>
+        <Poster
+            id="heroTitlePoster"
+            width="810"
+            height="1080"
+            translation="[1110, 0]"
+        />
+        <!-- <Poster
+            id="heroGradient"
+            width="150"
+            height="1080"
+            translation="[1109, 0]"
+            uri="pkg:/images/ItemDetailsGradient.png"
+        /> -->
+        <Label
+            id="titleLbl"
+            width="800"
+            height="120"
+            maxLines="2"
+            wrap="true"
+            lineSpacing="0"
+            vertAlign="bottom"
+            translation="[160, 90]"
+        />
+        <LayoutGroup
+            id="metaLayoutGroup"
+            translation="[160, 250]"
+            layoutDirection="horiz"
+            horizAlignment="left"
+            vertAlignment="center"
+            itemSpacings="[12]"
+        />
+
+        <DescriptionText id="descriptionText" translation="[160, 284]" width="800" numLines="2"/>
+        
+    </children>
+</component>

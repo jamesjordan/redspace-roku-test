@@ -1,0 +1,12 @@
+<component name="MarkupGridComponent" extends="MarkupGrid">
+    <interface>
+        <field id="navDir" type="string" alwaysNotify="true" />
+        <field id="navBurst" type="string" alwaysNotify="true" />
+    </interface>
+
+    <script type="text/brightscript" uri="MarkupGridComponent.brs" />
+
+    <children>
+        <Timer id="holdTimer" duration="0.18" repeat="false" />
+    </children>
+</component>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<component name="VideoPageView" extends="Group">
+
+  <interface>
+    <field id="pageData" type="assocarray" alwaysNotify="true" />
+  </interface>
+
+  <script type="text/brightscript" uri="VideoPageView.brs" />
+  
+  <children>
+    <Video id="exampleVideo"/>
+  </children>
+</component>
